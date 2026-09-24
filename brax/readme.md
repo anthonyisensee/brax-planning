@@ -6,7 +6,7 @@ While it may get lonely, Brax can run all by itself. It can also be combined wit
 
 ## What It Does
 
-Brax adds a single `brax` schema to your Supabase postgres instance that gives you all the tools you need to create, read, update, and delete user groups, roles, and permissions. Building on top of the native `auth.user` object from Supabase, Brax even provides code you can add to your Supabase auth token hook to send a user's permissions to all token consumers along with all your user's authenticated requests.
+Brax adds a single `brax` schema to your Supabase postgres instance that gives you all the tools you need to create, read, update, and delete user groups, roles, and permissions. Building on top of the native `auth.user` object from Supabase, Brax even provides code you can add to your Supabase auth token hook to send a user's permissions to all token consumers along with your user's authenticated requests.
 
 ## Tables
 
