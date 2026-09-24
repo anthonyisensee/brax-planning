@@ -2,7 +2,7 @@
 
 Brax is your one-and-done solution for Supabase role based access control. It builds on top of native Supabase and postgres features to provide you all the mumbo-jumbo-permission-stuff you'd otherwise have to build in every enterprise system. This allows you to jump right into building the parts of your application that actually matter.
 
-While it may get lonely, Brax can run all by itself. It can also be combined with its sibling tenant access control system Tax to add tenant separation and isolation to a single Supabase instance. You can also combine it with with Smax to leverage your Brax and/or Tax configurations to automatically configure secure access control systems and smack down any bad data security practices. (In case this is confusing... Brax can be run by itself, but is required to run either Tax or Smax.)
+While it may get lonely, Brax can run all by itself. It can also be combined with its sibling tenant access control system Tax to add tenant separation and isolation to a single Supabase instance. You can also combine it with with Smax to leverage your Brax and/or Tax configurations to automatically configure RLS policies and smack down any bad data security practices. (In case this is confusing... Brax can be run by itself, but is required to run either Tax or Smax.)
 
 ## What It Does
 
