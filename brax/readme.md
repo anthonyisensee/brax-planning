@@ -41,6 +41,8 @@ Additionally, Brax introduces these necessary bridge tables:
 
 While you *can* modify `brax` tables directly, it's not recommended. Instead, you are encouraged to use the following helper functions. These functions contain what you might call "The Sauce".
 
+By default, these functions are granted only to the supabase-created postgres admin role. However, you can use custom grants or wrapper functions to provide them to whoever you want.
+
 ### Groups
 
 * `brax.add_user_to_group(<auth.user.id>, <brax.group.id>)` - Adds a user to a group.
@@ -56,3 +58,4 @@ While you *can* modify `brax` tables directly, it's not recommended. Instead, yo
 ### Verifications
 
 * `brax.user_has_permission(<auth.user.id>, <brax.permissions.id>)` - Returns true if a user has been assigned the specified permission via a user group that they belong to. Otherwise, returns false.
+* `brax.user_permissions(<auth.user.id>)` - Returns a unique result set containing the user's permissions. If the user has no permissions, returns an empty result set.

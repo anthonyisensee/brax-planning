@@ -10,7 +10,7 @@ Additionally, Tax introduces these bridge tables:
 
 ## Helper Functions
 
-These depend heavily on the process we want to implement for user invitation.
+These depend heavily on the process implemented for user invitation. Aka, is a user added to the tenant immediately a part of it? Do they enter some sort of "invited" stage? Do they have to accept the invite? Does an invite to a user that doesn't exist trigger an email to them?
 
 ### Tenant
 
@@ -24,3 +24,4 @@ These depend heavily on the process we want to implement for user invitation.
 ### Brax + Tax
 
 * `tax.user_has_permission_in_tenant(<auth.user.id>, <brax.permissions.code>, <tax.tenant.id>)` - Returns true if a user has been assigned the specified permission via a user group that they belong to in the specified tenant. Otherwise, returns false.
+* `tax.tenant_user_permissions(<tenant.id>, <auth.user.id>, <brax.permissions.code>, <tax.tenant.id>)` - Returns a unique result set containing the user's permissions in the specified tenant. If the user has no permissions in that tenant, returns an empty result set.
